@@ -1,0 +1,367 @@
+#include <iostream>
+#include <math.h>
+#include<conio.h>
+#include<math.h>
+#include<stdio.h>
+
+
+using namespace std;
+int fac(int);
+
+
+int main()
+{
+   /* Problema 2. Se necesita un programa que permita determinar la mínima combinación de billetes
+    y monedas para una cantidad de dinero determinada. Los billetes en circulación son de $50.000,
+    $20.000, $10.000, $5.000, $2.000 y $1.000, y las monedas son de $500, $200, $100 y $50.
+    Hacer un programa que entregue el número de billetes y monedas de cada denominación para completar la
+    cantidad deseada. Si por medio de los billetes y monedas disponibles no se puede lograr la
+    cantidad deseada, el sistema deberá decir lo que resta para lograrla.
+    Ej: si se ingresa 47810, el programa debe imprimir:
+    50000 : 0
+    20000: 2
+    10000 : 0
+    5000: 1
+    2000 : 1
+    1000: 0
+    500 : 1
+    200: 1
+    100 : 1
+    50: 0
+    Faltante: 10
+    */
+
+    /*int valor,cant;
+
+    cout<<"Ingrese el valor : ";cin>>valor;
+    cant=valor/50000;
+    valor%=50000;
+    cout<<"50000: "<<cant<<endl;
+    cant=valor/20000;
+    valor%=20000;
+    cout<<"20000: "<<cant<<endl;
+    cant=valor/10000;
+    valor%=10000;
+    cout<<"10000: "<<cant<<endl;
+    cant=valor/5000;
+    valor%=5000;
+    cout<<"5000: "<<cant<<endl;
+    cant=valor/2000;
+    valor%=2000;
+    cout<<"2000: "<<cant<<endl;
+    cant=valor/1000;
+    valor%=1000;
+    cout<<"1000: "<<cant<<endl;
+    cant=valor/500;
+    valor%=500;
+    cout<<"500: "<<cant<<endl;
+    cant=valor/200;
+    valor%=200;
+    cout<<"200: "<<cant<<endl;
+    cant=valor/100;
+    valor%=100;
+    cout<<"100: "<<cant<<endl;
+    cant=valor/50;
+    valor%=50;
+    cout<<"50: "<<cant<<endl;
+    cout<<"Faltante: "
+          ""<<valor-cant;
+
+    return 0;
+    //PROBLEMA-2 RESUELTO*/
+//________________________________________________________________________________________________________
+
+                                    //NO SE ENTIENDE
+
+    /*Problema 4. Escriba un programa para leer dos números enteros con el siguiente signicado: el
+    valor del primer número representa una hora del día en un reloj de 24 horas, de modo que 1245
+    representa las doce y cuarenta y cinco de la tarde. El segundo entero representa un tiempo de duración
+    de la misma manera, por lo que 345 representa tres horas y 45 minutos. El programa debe
+    sumar esta duración primer número, y el resultado será impreso en la misma notación, en este caso
+    1630, que es el tiempo de 3 horas y 45 minutos después de 12:45.
+    Nota: el formato de salida debe ser: La hora es 1630.
+    Otra nota: se debe imprimir un mensaje como el siguiente cuando uno de los datos ingresados en
+    inválido: 1560 es un tiempo invalido.*/
+
+
+    /*int num1,num2;
+    cout<<"Ingrese un numero : ";cin>>num1;
+    cout<<"Ingrese un numero de: ";cin>>num2;
+
+    PROBLEMA #4 FALTA RESOLVER NO SE ENTIENDE EL PLANTEAMIENTO, SITUACION QUE REPORTE 2 VECES ANTES DE
+PRESENTAR EL TRABAJO. PERO RECIBI EXPLICACIONES VAGAS. SIN EMBARGO PRESENTO EL PROBLEMA SIGUIENTE(#5) EN
+LA LISTA POR SI ES VALIDO EN SU REEMPLAZO*/
+    //________________________________________________________________________________________________________
+
+     /* Problema 5. Escriba un programa que muestre el siguiente patrón en la pantalla:
+          *
+         ***
+        *****
+       *******
+        ******
+         ***
+          *
+
+        El tamaño del patrón estará determinado un número entero impar que ingrese el usuario. En el
+        ejemplo mostrado, el tamaño de la gura es 7.*/
+
+
+        /*int n,a=0,e=0,i;
+
+        cout<<"Ingrese un numero: ",cin>>n;
+        {for(i=1;i<=2*2;i++){
+            cout<<i;
+            //e=0;
+        for(e=i;e<=n-1;e++)
+             {cout<<" ";}
+
+            //a=0;
+            for(a=1;a<=(2*i)-1;a++)
+            {cout<<"*";}
+             cout<<endl;
+        }
+
+        for(i=n-4;i>=1;i--){
+            cout<<i;
+            //e=0;
+        for(e=i;e<=n-1;e++)
+             {cout<<" ";}
+
+            //a=0;
+            for(a=1+1;a<=(2*i);a++)
+            {cout<<"*";}
+             cout<<endl;
+        }
+}
+  */
+//______________________________________________________________________________________________________
+
+
+
+
+    /*Problema 6. Escriba un programa que encuentre el valor aproximado del número de euler en base
+    a la siguiente suma innita:e =1/0! +1/1! +1/2! +1/3! +1/ 4! +1/5! + ... (2)
+    El usuario debe ingresar el número de elementos usados en la aproximación.
+    Ej: si se ingresa 3 e =1/ 0! +1/1! +1/2! = 2,5
+    Nota: el formato de salida debe ser: e es aproximadamente: 2.5*/
+
+    /*int num,i;
+    cout<<"Ingrese un numero: ";cin>>num;
+    double e=0;
+    for (i=0;i<num;i++){
+        double u=fac(i);e+=1/u;}
+    cout<<"e es aproximadamente: "<<e<<endl;}
+    int fac(int f){
+    int f1=f;
+    if (f1>1)
+    {f1=f*fac(f-1);
+    return f1;}
+    else{return 1;}
+
+    //PROBLEMA # 6 RESUELTO*/
+
+//________________________________________________________________________________________________________
+
+
+
+    /*Problema 8. Escriba un programa que reciba 3 números a, b, c, y calcule la suma de todos los
+    múltiplos de a y b que sean menores a c. Tenga en cuenta no sumar 2 veces los múltiplos comunes.
+    Ej: para a=3, b=5 y c=10. Se sumarían 3+6+9+5=23
+    Para a=5, b=7 y c=36. Se sumarían 5+10+15+20+25+30+35+7+14+21+28 = 210.
+    Nota: el formato de salida debe ser:
+    m11 + m12 + m13 + . . . + m21 + m22 + m23. . . = sumatoria.
+    m11 representa el primer múltiplo de a y así sucesivamente. m21 representa el primer múltiplo de b
+    y así sucesivamente.*/
+
+
+    /*int num1,num2,num3,i,j;
+    cout<<"Ingrese un numero : ";cin>>num1;
+    cout<<"Ingrese un numero : ";cin>>num2;
+    cout<<"Ingrese un numero : ";cin>>num3;
+    {for(i=num1;i<num3;i=num1+i)
+    cout<<i<<"+";
+    for (j=num2;j<num3;j=num2+j)
+    cout<<j<<"+";}
+    cout<<" = "<<(num3/num1*i/2+num3/num2*j/2);//?????????
+
+    return 0;
+    */
+
+
+//________________________________________________________________________________________________________
+
+
+    /*Problema 10. Escriba un programa que reciba un número n e imprima el enésimo número primo.
+    Ej: Si recibe 4 el programa debe imprimir 7.
+    Nota: la salida del programa debe ser: El primo numero 4 es: 7.*/
+
+    /*int x,cont,z,i,t[100],num;
+    i=0;
+
+    for(x=1;x<=100;x++)
+    { cont=0;
+      for(z=1;z<=x;z++)
+
+    {
+    if(x%z==0)
+    {cont++;}
+
+    }
+
+   if(cont==2 || z==2 || z==0)
+  { t[i]=x;
+       i++;}
+
+  }
+
+   for(x=0;x<i;x++)
+       { cout<<t[x]<<",";
+   }
+    cout<<endl;
+    cout<<"ingrese un numero: ";cin>>num;
+    cout<<endl;
+    if(num[t])
+    {cout<<"El primo numero "<<num<<" es :"<<num[t];}
+        //PROBLEMA #10 RESUELTO
+        */
+ //________________________________________________________________________________________________________
+
+
+
+    /*Problema 12. Escriba un programa que calcula el máximo factor primo de un número.
+    Ej: Si se recibe 33 el programa debe imprimir 11.
+    Nota: la salida del programa debe ser: El mayor factor primo de 33 es: 11*/
+
+    /*int num,i,j,cont,fin=0;
+    cout<<"Ingrese un numero: ";cin>>num;
+    for(i=2;i<=num;i++)
+    {
+        cont=0;
+        for(j=2;j<=i/2;j++)
+        {
+            if(i%j==0)
+            {cont=cont+1;
+                break;}
+        }
+        if(cont<1)
+        {fin++;}
+    }
+    cout<<"El mayor factor primo de "<<num<< " es :"<<fin;
+    //PROBLEMA #12 RESUELTO
+    */
+ //________________________________________________________________________________________________________
+
+
+    /*Problema 14. Un número palíndromo es igual de derecha a izquierda y de izquierda a derecha,
+    Ej: 969. escriba un programa que calcule el número palíndromo más grande que se puede obtener
+    como una multiplicación de números de 3 dígitos.
+    Ej: una de las posibles respuestas es: 143*777=111111.
+    Nota: la salida del programa debe ser: 143*777=111111*/
+
+    /*int m,n,n1,res,inv=0;
+    cout<<"Ingrese un numero: ";cin>>n;
+    n1=n;
+    while(n1>0)
+    {res=n1%10,n1=n1/10,inv=inv*10+res;}
+    if(inv==n){cout<<n;}
+        else {cout<<n<<endl;}
+    cout<<"Ingrese un numero: ";cin>>m;
+    n1=m;
+    while(n1>0)
+    {res=n1%10,n1=n1/10,inv=inv*10+res;}
+    if(inv==m){cout<<m;}
+        else {cout<<m<<endl;}
+    cout<<n<<"*"<<m<<" = "<<n*m;
+    return 0;
+    //EJERCICIO #14 RESUELTO
+    */
+//________________________________________________________________________________________________________
+
+
+    /*Problema 16. La serie de Collatz se conforma con la siguiente regla: sea n un elemento de la serie,
+    si n es par, el siguiente elemento es n/2, y si n es impar, el siguiente elemento es 3n+1.
+    Escriba un programa que reciba un número k y calcule cual es el elemento inicial j (semilla), menor
+    que k, que produce la serie más larga y diga cuantos términos m tiene la serie.
+    Tip: la serie termina al llegar a un elemento cuyo valor sea 1.
+    Ej: para la semilla 13: 13, 40, 20, 10, 5, 16, 8, 4, 2, 1
+    Nota: la salida del programa debe ser:
+    La serie mas larga es con la semilla: j, teniendo m terminos.
+    Otra nota: se le dará una bonicación si imprime la serie*/
+
+    /*int num,fin=0;
+    cout<<"Ingrese un numero: ";cin>>num;
+    cout<<"La serie mas larga es con la semilla :"<<num<<" es "<<num<<",";
+    while(num>1)
+    {if (num%2==0)
+    {num=num/2;
+     cout<<num<<",";}
+        else
+        {num=3*num+1;
+         cout<<num<<",";}
+        {fin++;}
+    }
+    cout<<" "<<"teniendo: "<<fin+1<<" terminos.";
+    //PROBLEMA #16 RESUELTO
+    */
+ //________________________________________________________________________________________________________
+
+
+    /*Problema 17. La secuencia de números triangulares se forma al sumar su posición en el arreglo
+    con el valor del número anterior: 1, 1+2=3, 3+3=6, 6+4=10, 10+5=15, 15+6=21, 21+7=28...
+    Si listamos los números triangulares y sus divisores tenemos:
+    1: 1
+    3: 1,3
+    6: 1,2,3,6
+    10: 1,2,5,10
+    15: 1,3,5,15
+    21: 1,3,7,21
+    28: 1,2,4,7,14,28
+    Se observa que 28 es el primer número triangular que tiene más de 5 divisores. Escriba un programa
+    que reciba un número k y calcule cual es el primer número triangular que tiene más de k divisores.
+    Tip: el enésimo número triangular se puede representar como n*(n+1)/2.
+    Nota: la salida del programa debe ser:
+    El numero es: 28 que tiene 6 divisores*/
+
+    //INTENTE POR TODOS LOS MEDIOS PERO NO PUDE RESOLVERLO....
+
+    /*int num,i,j,s=0,a;
+    cout<<"Ingrese un numero: ";cin>>num;
+    //for(num=1;num=num;num++)
+    a=num;
+
+    for (i=1;i<=a;i++){
+        if(a%i==0)
+
+            cout<<i<<endl;
+    if(i%i==0)
+    //cout<<i;}
+        //s=s+i;cout<<s;
+
+    for(j=1;j<=i;j++)
+    if(a%i==0)
+
+    cout<<j;}*/
+
+
+
+/*{s=s+i;
+    //cout<<s;}
+       // j=num*(num+1)/2;
+if(num%1==0)
+    {for(j=1;j<=i;j++)
+//j=num*(num+1)/2;}
+if(num%num==0)
+    //if(s%i==0)
+        cout<<s<<",";
+}
+
+//cout<<num;
+cout<<endl;
+}
+    //cout<<num*(num+1)/2;
+
+}*/
+
+
+
+}
